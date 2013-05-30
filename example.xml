@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
+<?xml-stylesheet type="text/xsl" href="xml/featurelist.xslt" ?>
 <!DOCTYPE featurelist SYSTEM "xml/featurelist.dtd">
 <featurelist>
 	<author name="Anatoly Zelenin" email="az@azapps.de" />
+	<title>Feature List Test Document</title>
+	<participants>
+		<participant>Anatoly Zelenin</participant>
+		<participant function="assistant">Foo Bar</participant>
+	</participants>
+	<client>God</client>
 	<features>
-		<feature name="Testfeaturelist" short="TF">
+		<feature name="Test Featurelist" short="TF">
 			<description>It's just a test</description>
 			<functions>
 				<function>Functionslist</function>
@@ -17,7 +24,37 @@
 			</data>
 			<tests>
 				<test>Test for valid XML</test>
-				<test>is the \LaTeX correct?</test>
+				<test>is the \LaTeX correct?</test>
+			</tests>
+			<features>
+				<feature name="Subfeature" short="TFS">
+					<description>Fooobar description</description>
+					<functions>
+						<function>Test</function>
+					</functions>
+					<data>
+						<item>Test</item>
+						<item>Foo</item>
+					</data>
+					<tests>
+						<test>Banana</test>
+						<test>γρεεκ λεττερσ</test>
+					</tests>
+				</feature>
+			</features>
+		</feature>
+		<feature name="Another" short="AN">
+			<description>Fooobar description</description>
+			<functions>
+				<function>Test</function>
+			</functions>
+			<data>
+				<item>Test</item>
+				<item>Foo</item>
+			</data>
+			<tests>
+				<test>Banana</test>
+				<test>γρεεκ λεττερσ</test>
 			</tests>
 		</feature>
 	</features>

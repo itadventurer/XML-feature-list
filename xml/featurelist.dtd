@@ -4,11 +4,17 @@
 	 Author: Anatoly Zelenin <az@azapps.de>
 	 Date: 2013-05-30
 -->
-<!ELEMENT featurelist (author,features)>
+<!ELEMENT featurelist (features)>
 <!ELEMENT author (EMPTY)>
 <!ATTLIST author
 	name CDATA #REQUIRED
 	email CDATA #REQUIRED >
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT participants (participant+)>
+<!ELEMENT participant (#PCDATA)>
+<!ATTLIST participant
+	function CDATA #IMPLIED >
+<!ELEMENT participant (#PCDATA)>
 <!ELEMENT features (feature+)>
 <!ELEMENT feature (description,functions,data?,tests,features?)>
 <!ATTLIST feature
