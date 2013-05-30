@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE featurelist SYSTEM "xml/featurelist.dtd">
+<featurelist>
+	<author name="Anatoly Zelenin" email="az@azapps.de" />
+	<features>
+		<feature name="Testfeaturelist" short="TF">
+			<description>It's just a test</description>
+			<functions>
+				<function>Functionslist</function>
+				<function>Some data</function>
+				<function>Tests</function>
+				<function>And some subfeatures</function>
+			</functions>
+			<data>
+				<item>Test</item>
+				<item>Foo</item>
+			</data>
+			<tests>
+				<test>Test for valid XML</test>
+				<test>is the \LaTeX correct?</test>
+			</tests>
+		</feature>
+	</features>
+</featurelist>

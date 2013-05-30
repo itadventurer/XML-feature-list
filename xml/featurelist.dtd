@@ -1,0 +1,25 @@
+<!--
+	 FEATURELIST DTD
+
+	 Author: Anatoly Zelenin <az@azapps.de>
+	 Date: 2013-05-30
+-->
+<!ELEMENT featurelist (author,features)>
+<!ELEMENT author (EMPTY)>
+<!ATTLIST author
+	name CDATA #REQUIRED
+	email CDATA #REQUIRED >
+<!ELEMENT features (feature+)>
+<!ELEMENT feature (description,functions,data?,tests,features?)>
+<!ATTLIST feature
+	name CDATA #REQUIRED
+	short CDATA #REQUIRED>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT functions (function+)>
+<!ELEMENT function (#PCDATA)>
+<!ELEMENT data (item+)>
+<!ELEMENT item (#PCDATA)>
+<!ATTLIST item
+	foreign CDATA #IMPLIED>
+<!ELEMENT tests (test+)>
+<!ELEMENT test (#PCDATA)>
