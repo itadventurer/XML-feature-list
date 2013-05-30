@@ -29,3 +29,4 @@
 	foreign CDATA #IMPLIED>
 <!ELEMENT tests (test+)>
 <!ELEMENT test (#PCDATA)>
+<!ELEMENT b (#PCDATA)>
