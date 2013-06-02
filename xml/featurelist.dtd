@@ -4,7 +4,7 @@
 	 Author: Anatoly Zelenin <az@azapps.de>
 	 Date: 2013-05-30
 -->
-<!ELEMENT featurelist (features)>
+<!ELEMENT featurelist (author|title|participants|description|features|client)>
 <!ELEMENT author (EMPTY)>
 <!ATTLIST author
 	name CDATA #REQUIRED
@@ -23,10 +23,10 @@
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT functions (function+)>
 <!ELEMENT function (#PCDATA)>
-<!ELEMENT data (item+)>
+<!ELEMENT data (item+|description)>
 <!ELEMENT item (#PCDATA)>
 <!ATTLIST item
 	foreign CDATA #IMPLIED>
-<!ELEMENT tests (test+)>
+<!ELEMENT tests (test+|description)>
 <!ELEMENT test (#PCDATA)>
 <!ELEMENT b (#PCDATA)>
