@@ -4,7 +4,7 @@
 	 Author: Anatoly Zelenin <az@azapps.de>
 	 Date: 2013-05-30
 -->
-<!ELEMENT featurelist (author|title|participants|description|assignments?|features|client)>
+<!ELEMENT featurelist (author|title|participants|description|features|client)>
 <!ELEMENT author (EMPTY)>
 <!ATTLIST author
 	name CDATA #REQUIRED
@@ -38,9 +38,3 @@
 <!ATTLIST item
 	foreign CDATA #IMPLIED
 	name CDATA #IMPLIED>
-
-<!ELEMENT assignments (application_area?|target_groups?|operational_conditions?|safety?)>
-<!ELEMENT application_area (#PCDATA)>
-<!ELEMENT target_groups (item+)>
-<!ELEMENT operational_conditions (item+)>
-<!ELEMENT safety (item+)>
