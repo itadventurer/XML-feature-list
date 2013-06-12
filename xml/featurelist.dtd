@@ -32,6 +32,7 @@
 <!ELEMENT test (#PCDATA)>
 
 <!ELEMENT b (#PCDATA)>
+<!ELEMENT list (item+)>
 
 <!ELEMENT item (#PCDATA)>
 <!ATTLIST item
