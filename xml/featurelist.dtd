@@ -16,7 +16,6 @@
 <!ELEMENT participant (#PCDATA)>
 <!ATTLIST participant
 	function CDATA #IMPLIED >
-<!ELEMENT participant (#PCDATA)>
 
 <!ELEMENT features (feature+)>
 <!ELEMENT feature (description,functions,data?,tests,features?)>
