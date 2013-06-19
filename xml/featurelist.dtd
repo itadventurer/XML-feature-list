@@ -33,6 +33,9 @@
 
 <!ELEMENT b (#PCDATA)>
 <!ELEMENT list (item+)>
+<!ELEMENT link (#PCDATA)>
+<!ATTLIST link
+	to CDATA #REQUIRED>
 
 <!ELEMENT item (#PCDATA)>
 <!ATTLIST item
