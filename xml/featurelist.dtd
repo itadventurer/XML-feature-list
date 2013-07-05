@@ -31,6 +31,7 @@
 <!ELEMENT test (#PCDATA)>
 
 <!ELEMENT b (#PCDATA)>
+<!ELEMENT br EMPTY>
 <!ELEMENT list (item+)>
 <!ELEMENT link (#PCDATA)>
 <!ATTLIST link
@@ -40,3 +41,7 @@
 <!ATTLIST item
 	foreign CDATA #IMPLIED
 	name CDATA #IMPLIED>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img
+	src CDATA #REQUIRED>
