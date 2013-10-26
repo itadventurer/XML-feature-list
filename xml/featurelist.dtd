@@ -4,13 +4,15 @@
 	 Author: Anatoly Zelenin <az@azapps.de>
 	 Date: 2013-05-30
 -->
-<!ELEMENT featurelist (author|title|participants|description|features|client)>
+<!ELEMENT featurelist (author,title,header_title,participants,client,description,features)>
 <!ELEMENT author (EMPTY)>
 <!ATTLIST author
 	name CDATA #REQUIRED
 	email CDATA #REQUIRED >
 
 <!ELEMENT title (#PCDATA)>
+<!ELEMENT client (#PCDATA)>
+<!ELEMENT header_title (#PCDATA)>
 
 <!ELEMENT participants (participant+)>
 <!ELEMENT participant (#PCDATA)>
@@ -18,16 +20,16 @@
 	function CDATA #IMPLIED >
 
 <!ELEMENT features (feature+)>
-<!ELEMENT feature (description,functions,data?,tests,features?)>
+<!ELEMENT feature (description?,functions?,data?,tests?,features?)>
 <!ATTLIST feature
 	name CDATA #REQUIRED
 	short CDATA #REQUIRED>
 <!ELEMENT description (#PCDATA)>
 <!ELEMENT functions (function+)>
 <!ELEMENT function (#PCDATA)>
-<!ELEMENT data (item+|description)>
+<!ELEMENT data (description,item+)>
 
-<!ELEMENT tests (test+|description)>
+<!ELEMENT tests (description,test+)>
 <!ELEMENT test (#PCDATA)>
 
 <!ELEMENT b (#PCDATA)>
